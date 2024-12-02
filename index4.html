@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adem Jashari International Airport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        header nav ul li a.active {
+            text-decoration: underline;
+        }
+
+      
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            height: 500px; 
+        }
+
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://www.limak.com.tr/images/content/Pristina-Airport-pp.jpg'); 
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4; 
+            z-index: -1; 
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+       
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #e9ecef;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .service-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .service-card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="departures-arrivals.html">Departures & Arrivals</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="passenger-rules.html">Passenger Rules</a></li>
+                <li><a href="parking-rental.html">Parking & Car Rental</a></li>
+                <li><a href="covid-rules.html">COVID-19 Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Adem Jashari International Airport</h1>
+        <p>Your gateway to the world, providing top-notch services and comfort.</p>
+        <a href="about.html" class="cta-button">Learn More About Us</a>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <h3>Departures & Arrivals</h3>
+            <p>Check real-time updates on flight departures and arrivals for your convenience.</p>
+            <a href="departures-arrivals.html">View Details</a>
+        </div>
+        <div class="service-card">
+            <h3>Partners</h3>
+            <p>Discover our airline partners offering flights to various destinations.</p>
+            <a href="partners.html">View Partners</a>
+        </div>
+        <div class="service-card">
+            <h3>Parking & Car Rental</h3>
+            <p>Easy access to parking and car rental services for a smooth travel experience.</p>
+            <a href="parking-rental.html">Find Parking</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adem Jashari International Airport. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

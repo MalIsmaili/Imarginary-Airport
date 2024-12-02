@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Adem Jashari International Airport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        header nav ul li a.active {
+            text-decoration: underline;
+        }
+        .banner {
+            background-color: #e9ecef;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .banner h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .gallery {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            margin: 0;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="departures-arrivals.html">Departures & Arrivals</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="passenger-rules.html">Passenger Rules</a></li>
+                <li><a href="parking-rental.html">Parking & Car Rental</a></li>
+                <li><a href="covid-rules.html">COVID-19 Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Gallery</h1>
+            <p>Explore stunning views of Adem Jashari International Airport.</p>
+        </section>
+        <section class="gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.97WmXk0XgDM0pKXTAFSDGQHaFB?rs=1&pid=ImgDetMain" alt="Airport Exterior">
+                    <h3>Airport Exterior</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/originals/af/a5/18/afa51805c77fb59d82374ed44a702f48.jpg" alt="Check-In Area">
+                    <h3>Check-In Area</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/R.4684cf63bc4e3e5b65586bfefe08010f?rik=Aad6JN3XG0Jlnw&riu=http%3a%2f%2fen.sayamaluxury.com%2fimages%2fvip%2f6%2f738x492%2faa97393383bc1a14b99d371fa9c8741f.jpg&ehk=YlKHasUASCiSuZlIOWRr9227JefgB1hyx8myPh8k0%2fo%3d&risl=&pid=ImgRaw&r=0" alt="Departure Lounge">
+                    <h3>Departure Lounge</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.aviareviews.com/wp-content/uploads/2020/05/schwerin-parchim-international-airport-1.jpg" alt="Runway">
+                    <h3>Runway</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.aviationwa.org.au/wp-content/uploads/2015/11/20151122_Terminal_1_Domestic_starts_operations_David_Eyre-38.jpg" alt="Baggage Claim">
+                    <h3>Baggage Claim</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.UVsyMz1Qc5tjpAd7Jck7VwHaE8?rs=1&pid=ImgDetMain" alt="Airport Staff">
+                    <h3>Airport Staff</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Adem Jashari International Airport. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
